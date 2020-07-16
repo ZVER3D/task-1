@@ -1,0 +1,62 @@
+main {
+  display: flex;
+  justify-content: center;
+  font-family: "Oswald", sans-serif;
+}
+
+form {
+  display: flex;
+  margin: 30px;
+  padding: 22px 0 11px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  border-radius: 5px;
+  box-shadow: 0 15px 16px 0 #7ec480, 0 -5px 20px 0 #7ec480;
+}
+
+input,
+.button {
+  margin: 11px 0;
+  height: 32px;
+  width: 140px;
+  border-radius: 2px;
+}
+
+input {
+  border: 1px solid #dde2e7;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+input:focus {
+  outline: none;
+  border-color: #abaeb2;
+}
+
+.button {
+  display: block;
+  font-size: 12px;
+  text-align: center;
+  line-height: 32px;
+  background-color: #72bf44;
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  border-radius: 2px;
+  z-index: -1;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  box-shadow: 0 7px 0 6px #009810;
+}
