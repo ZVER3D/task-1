@@ -26,11 +26,7 @@ input,
 
 input {
   border: 1px solid #dde2e7;
-  font-family: "Oswald", sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
-  text-align: center;
+  box-sizing: border-box;
 }
 
 input:focus {
@@ -39,7 +35,9 @@ input:focus {
 }
 
 .button {
+  padding: 0;
   display: block;
+  border: 0;
   font-size: 12px;
   text-align: center;
   line-height: 32px;
@@ -47,6 +45,12 @@ input:focus {
   color: white;
   text-decoration: none;
   position: relative;
+  outline: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #68ad3e;
 }
 
 .button::before {

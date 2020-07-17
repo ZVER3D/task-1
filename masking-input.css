@@ -1,0 +1,30 @@
+.shell {
+  position: relative;
+  line-height: 1;
+}
+
+.shell span {
+  position: absolute;
+  left: 1px;
+  top: 18px;
+  color: #ccc;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.shell span i {
+  font-style: normal;
+  /* any of these 3 will work */
+  color: transparent;
+  opacity: 0;
+  visibility: hidden;
+}
+
+input.masked,
+.shell span {
+  font-size: 18px;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  color: #333;
+  padding-left: 10px;
+}
